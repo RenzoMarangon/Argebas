@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
 /* Animaciones */
 @keyframes sheetInLeft {
   from {
