@@ -11,7 +11,8 @@ const LINKS = [
 
 export const Navbar = () => {
   return (
-    <nav className="text-white backdrop-blur-md shadow-md">
+    <nav className="text-white backdrop-blur-md shadow-sm">
+      {/* bg-indigo-950/20   */}
       <Container className="flex h-16 items-center justify-between">
         {/* Logo */}
         <a href="#index" className="text-sm font-semibold tracking-tight">
