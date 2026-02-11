@@ -3,6 +3,45 @@ import Container from "../Components/Container";
 import Card from "../Components/Card";
 import { archive, settings, profile, printer } from "../Assets/icons";
 import { printerAbout } from "../Assets/images";
+import { CardsSwiper } from "../Components/CardsSwiper";
+
+type Card = {
+  image: string;
+  alt: string;
+  title: string;
+  description: string;
+};
+
+const cards: Card[] = [
+  {
+    image: printer,
+    alt: "Servicio",
+    title: "Provisión de equipos propios",
+    description:
+      "Bajo la modalidad full service, incluye la provisión de todos los equipos necesarios (impresoras, multifunción, fotocopiadoras). También incluye toners, insumos, mantenimiento, servicio tecnico y reposición.",
+  },
+  {
+    image: settings,
+    alt: "Soporte",
+    title: "Mantenimiento de equipos",
+    description:
+      "Cuando el cliente ya tiene un parque instalado y necesita que se lo mantengan bajo la modalidad full service. Aquí se puede hacer un mix entre equipos del cliente y equipos que proveamos nosotros.",
+  },
+  {
+    image: profile,
+    alt: "Control de usuarios",
+    title: "Control de usuarios",
+    description:
+      "Incluido en ciertos modelos, le permite habilitar distintos usuarios y establecer limites para el uso de los equipos ademas de sacar reportes sobre el uso del equipo.",
+  },
+  {
+    image: archive,
+    alt: "Misión",
+    title: "Impresión segura",
+    description:
+      "En caso de requerirlo, puede habilitarse un sistema de impresion segura para evitar posibles fugas de informacion utilizando un algoritmo de cifrado en los documentos a recibir.",
+  },
+];
 
 const About = () => {
   return (
@@ -30,33 +69,19 @@ const About = () => {
           <h2 className="font-semibold text-xl text-center text-gray-700">
             Qué hacemos
           </h2>
-          <div className="mt-8 grid grid-cols-2 lg:grid-cols-3 gap-8 ">
-            <Card
-              image={printer}
-              alt="Servicio"
-              title="Provisión de equipos propios"
-              description="Bajo la modalidad full service, incluye la provisión de todos los equipos necesarios (impresoras, multifunción, fotocopiadoras). También incluye toners, insumos, mantenimiento, servicio tecnico y reposición."
-            />
-            <Card
-              image={settings}
-              alt="Soporte"
-              title="Mantenimiento de equipos"
-              description="Cuando el cliente ya tiene un parque instalado y necesita que se lo mantengan bajo la modalidad full service. Aquí se puede hacer un mix entre equipos del cliente y equipos que proveamos nosotros."
-            />
-
-            <Card
-              image={profile}
-              alt="Control de usuarios"
-              title="Control de usuarios"
-              description="Incluido en ciertos modelos, le permite habilitar distintos usuarios y establecer limites para el uso de los equipos ademas de sacar reportes sobre el uso del equipo."
-            />
-
-            <Card
-              image={archive}
-              alt="Misión"
-              title="Impresión segura"
-              description="En caso de requerirlo, puede habilitarse un sistema de impresion segura para evitar posibles fugas de informacion utilizando un algoritmo de cifrado en los documentos a recibir."
-            />
+          <div className="mt-8 ">
+            <CardsSwiper
+              items={cards}
+              allowTouchMove={true}
+              renderCard={(card) => (
+                <Card
+                  image={card.image}
+                  alt={card.alt}
+                  title={card.title}
+                  description={card.description}
+                />
+              )}
+              getKey={(image) => image.alt}></CardsSwiper>
           </div>
         </div>
 

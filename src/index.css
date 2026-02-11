@@ -5,6 +5,10 @@ body {
   background-color: #f5f5f5;
 }
 
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
 /* Animaciones */
 @keyframes sheetInLeft {
   from {
