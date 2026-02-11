@@ -35,7 +35,7 @@ export function CardsSwiper<T>({
       speed={6000}
       allowTouchMove={allowTouchMove}
       autoplay={{
-        delay: 200,
+        delay: 0,
         disableOnInteraction: false,
       }}>
       {loopItems.map((item, index) => (
