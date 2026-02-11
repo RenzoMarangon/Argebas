@@ -26,33 +26,38 @@ const About = () => {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-3 gap-8 ">
-          <Card
-            image={printer}
-            alt="Servicio"
-            title="Provisión de equipos propios"
-            description="Bajo la modalidad full service, incluye la provisión de todos los equipos necesarios (impresoras, multifunción, fotocopiadoras). También incluye toners, insumos, mantenimiento, servicio tecnico y reposición."
-          />
-          <Card
-            image={settings}
-            alt="Soporte"
-            title="Mantenimiento de equipos"
-            description="Cuando el cliente ya tiene un parque instalado y necesita que se lo mantengan bajo la modalidad full service. Aquí se puede hacer un mix entre equipos del cliente y equipos que proveamos nosotros."
-          />
+        <div className="mt-16 scroll-mt-20 " id="faq">
+          <h2 className="font-semibold text-xl text-center text-gray-700">
+            Qué hacemos
+          </h2>
+          <div className="mt-8 grid grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <Card
+              image={printer}
+              alt="Servicio"
+              title="Provisión de equipos propios"
+              description="Bajo la modalidad full service, incluye la provisión de todos los equipos necesarios (impresoras, multifunción, fotocopiadoras). También incluye toners, insumos, mantenimiento, servicio tecnico y reposición."
+            />
+            <Card
+              image={settings}
+              alt="Soporte"
+              title="Mantenimiento de equipos"
+              description="Cuando el cliente ya tiene un parque instalado y necesita que se lo mantengan bajo la modalidad full service. Aquí se puede hacer un mix entre equipos del cliente y equipos que proveamos nosotros."
+            />
 
-          <Card
-            image={profile}
-            alt="Control de usuarios"
-            title="Control de usuarios"
-            description="Incluido en ciertos modelos, le permite habilitar distintos usuarios y establecer limites para el uso de los equipos ademas de sacar reportes sobre el uso del equipo."
-          />
+            <Card
+              image={profile}
+              alt="Control de usuarios"
+              title="Control de usuarios"
+              description="Incluido en ciertos modelos, le permite habilitar distintos usuarios y establecer limites para el uso de los equipos ademas de sacar reportes sobre el uso del equipo."
+            />
 
-          <Card
-            image={archive}
-            alt="Misión"
-            title="Impresión segura"
-            description="En caso de requerirlo, puede habilitarse un sistema de impresion segura para evitar posibles fugas de informacion utilizando un algoritmo de cifrado en los documentos a recibir."
-          />
+            <Card
+              image={archive}
+              alt="Misión"
+              title="Impresión segura"
+              description="En caso de requerirlo, puede habilitarse un sistema de impresion segura para evitar posibles fugas de informacion utilizando un algoritmo de cifrado en los documentos a recibir."
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center mt-12">

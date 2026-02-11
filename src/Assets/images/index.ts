@@ -1,5 +1,5 @@
 import comex from "./comex.webp";
-import argebas from "./argebas.webp";
+import argebas from "./argebas.png";
 import globalmind from "./globalmind.webp";
 import driplan from "./DRIPLAN.webp";
 import remax from "./REMAX.webp";

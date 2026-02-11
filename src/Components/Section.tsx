@@ -10,7 +10,7 @@ export default function Section({
   className = "",
 }: SectionProps) {
   return (
-    <section id={id} className={`py-5 ${className}`}>
+    <section id={id} className={`py-5 scroll-mt-16 ${className}`}>
       {children}
     </section>
   );

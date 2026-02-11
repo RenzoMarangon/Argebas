@@ -10,12 +10,18 @@ const Banner = () => {
           10 años de experiencia nos avalan
         </h3>
         <div className="flex justify-center gap-4">
-          <button className="py-2 px-4 rounded-md text-black font-medium bg-yellow-300 border-2 hover:bg-transparent hover:border-yellow-300  hover:text-yellow-300 transition">
-            Contáctanos
-          </button>
-          <button className="text-cyan-600 border-2 border-cyan-600 rounded-md py-2 px-4 font-medium hover:bg-cyan-600 hover:text-white transition">
+          <a
+            href="#contact"
+            className="py-2 px-4 rounded-md text-black font-medium bg-yellow-300 border-2 hover:bg-transparent hover:border-yellow-300  hover:text-yellow-300 transition">
+            Contactanos
+          </a>
+          <a
+            href="https://wa.me/541112345678?text=Hola,%20quiero%20consultar%20por%20el%20servicio%20de%20fotocopiadoras"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-600 border-2 border-cyan-600 rounded-md py-2 px-4 font-medium hover:bg-cyan-600 hover:text-white transition">
             Whatsapp
-          </button>
+          </a>
         </div>
       </Container>
     </Section>
