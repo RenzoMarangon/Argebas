@@ -4,6 +4,7 @@ import Card from "../Components/Card";
 import { archive, settings, profile, printer } from "../Assets/icons";
 import { printerAbout } from "../Assets/images";
 import { CardsSwiper } from "../Components/CardsSwiper";
+import { TargetSwiper } from "../Components/TargetSwiper";
 
 type Card = {
   image: string;
@@ -69,8 +70,8 @@ const About = () => {
           <h2 className="font-semibold text-xl text-center text-gray-700">
             Qué hacemos
           </h2>
-          <div className="mt-8 ">
-            <CardsSwiper
+          <div className="mt-8 mx-auto">
+            {/* <CardsSwiper
               items={cards}
               allowTouchMove={true}
               renderCard={(card) => (
@@ -81,7 +82,19 @@ const About = () => {
                   description={card.description}
                 />
               )}
-              getKey={(image) => image.alt}></CardsSwiper>
+              getKey={(image) => image.alt}></CardsSwiper> */}
+
+            <TargetSwiper
+              items={cards}
+              renderCard={(card) => (
+                <Card
+                  image={card.image}
+                  alt={card.alt}
+                  title={card.title}
+                  description={card.description}
+                />
+              )}
+              getKey={(image) => image.alt}></TargetSwiper>
           </div>
         </div>
 

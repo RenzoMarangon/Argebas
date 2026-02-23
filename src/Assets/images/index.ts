@@ -4,5 +4,6 @@ import globalmind from "./globalmind.webp";
 import driplan from "./DRIPLAN.webp";
 import remax from "./REMAX.webp";
 import printerAbout from "./printer.png";
+import logotipe from "./g.png";
 
-export { comex, globalmind, driplan, remax, argebas, printerAbout };
+export { comex, globalmind, driplan, remax, argebas, printerAbout, logotipe };

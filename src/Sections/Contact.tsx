@@ -16,7 +16,8 @@ const Contact = () => {
               <p className="flex gap-2 items-center">
                 <span>Teléfono:</span>
                 <a
-                  href="https://wa.me/541112345678?text=Hola,%20quiero%20consultar%20por%20el%20servicio%20de%20fotocopiadoras"
+                  href="https://wa.me/541125581664?text=Hola,%20quiero%20consultar%20por%20el%20servicio%20de%20fotocopiadoras"
+                  target="_blank"
                   className="text-sm text-gray-700">
                   15-2558-1664
                 </a>
@@ -29,9 +30,12 @@ const Contact = () => {
                 </p>
               </p>
 
-              <p className="flex gap-2 items-center">
+              <p className="flex gap-2 items-start">
                 <span>Mail:</span>
-                <p className="text-sm text-gray-700">info@argebas.com.ar</p>
+                <div className="flex flex-col">
+                  <p className="text-sm text-gray-700">info@argebas.com.ar</p>
+                  <p className="text-sm text-gray-700">Sergio@argebas.com.ar</p>
+                </div>
               </p>
             </div>
 

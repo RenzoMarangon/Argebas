@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="absolute inset-0 bg-[url('./Assets/images/banner.webp')] bg-cover bg-center -z-50" />
       <Container className="text-center text-white  ">
         <h3 className="mb-8 text-3xl font-medium">
-          10 años de experiencia nos avalan
+          +30 años de experiencia nos avalan
         </h3>
         <div className="flex justify-center gap-4">
           <a
@@ -16,7 +16,7 @@ const Banner = () => {
             Contactanos
           </a>
           <a
-            href="https://wa.me/541112345678?text=Hola,%20quiero%20consultar%20por%20el%20servicio%20de%20fotocopiadoras"
+            href="https://wa.me/541125581664?text=Hola,%20quiero%20consultar%20por%20el%20servicio%20de%20fotocopiadoras"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-600 border-2 border-cyan-600 rounded-md py-2 px-4 font-medium hover:bg-cyan-600 hover:text-white transition">

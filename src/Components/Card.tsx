@@ -7,7 +7,7 @@ type CardProps = {
 
 const Card = ({ image, alt, title, description }: CardProps) => {
   return (
-    <article className="card relative bg-white shadow-xs rounded-lg overflow-hidden py-3 px-2 w-[300px] h-60">
+    <article className="card relative bg-white shadow-xs rounded-lg overflow-hidden py-3 px-2 w-full h-60">
       <img src={image} alt={alt} className="w-1/5" />
 
       <div className="card__body relative">

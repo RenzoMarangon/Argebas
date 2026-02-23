@@ -37,7 +37,7 @@ export function ContactForm() {
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     setServerMsg(null);
 
-    // Si el bot completó el honeypot, cortamos silenciosamente.
+    // Si el bot completó el honeypot, cortamos.
     if (data["bot-field"]) return;
 
     const payload: Record<string, string> = {
