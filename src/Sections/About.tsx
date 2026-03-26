@@ -3,7 +3,6 @@ import Container from "../Components/Container";
 import Card from "../Components/Card";
 import { archive, settings, profile, printer } from "../Assets/icons";
 import { printerAbout } from "../Assets/images";
-import { CardsSwiper } from "../Components/CardsSwiper";
 import { TargetSwiper } from "../Components/TargetSwiper";
 
 type Card = {
